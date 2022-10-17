@@ -12,16 +12,23 @@ module.exports = {
 
     },
     colors:{
-      "black": "#000",
+      transparent: "transparent",
+      white: "#fff",
+      black: "#000",
 
-      "gray-900": "#121214",
-      "gray-800": "#202024",
-      "gray-400": "#7c7c8a",
-      "gray-200": "#C4C4CC",
-      "gray-100": "#E1E1E6",
+      gray:{
+        900: "#121214",
+        800: "#202024",
+        400: "#7c7c8a",
+        200: "#C4C4CC",
+        100: "#E1E1E6",
+      },
+      cyan:{
+        
+        500: "#81d8f7",
+        300: "#9BE1FB"
+      }
 
-      "cyan-500": "#81d8f7",
-      "cyan-300": "#9BE1FB"
     },
     extend: {
       fontFamily:{
