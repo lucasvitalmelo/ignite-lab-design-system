@@ -1,5 +1,4 @@
 import { Meta, StoryObj } from "@storybook/react"
-import { Children } from "react";
 import { Text, TextPorps } from "./Text";
 
 export default {
