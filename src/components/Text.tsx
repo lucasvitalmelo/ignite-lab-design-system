@@ -5,10 +5,11 @@ import { ReactNode } from 'react';
 export interface TextPorps {
   size?: "sm" | "md" | "lg",
   children: ReactNode
-  asChild?: boolean;
+  asChild?: boolean
+  className?: string
 }
 
-export function Text({ size = "md", children, asChild }: TextPorps) {
+export function Text({ size = "md", children, asChild, className }: TextPorps) {
   const Comp = asChild ? Slot : "span"
 
   return (
@@ -19,7 +20,11 @@ export function Text({ size = "md", children, asChild }: TextPorps) {
           "text-xs": size === 'sm',
           "text-md": size === 'md',
           "text-lg": size === 'lg'
-        }
-      )}>{children}</Comp>
+        },
+        className,
+      )}
+    >
+      {children}
+    </Comp>
   )
 }
